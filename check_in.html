@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="header__section">
+        <div class="header__item headerlogo">
+            HOME WORK
+        </div>
+        <div class="header__item headerButton"><a href="index.html">Главная</a></div>
+        <div class="header__item headerButton"><a href="#">Меню</a></div>
+        <div class="header__item headerButton"><a href="#">Программы</a></div>
+        <div class="header__item headerButton"><a href="#">Технологии</a></div>
+        <div class="header__item headerButton"><a href="#">Бизнес</a></div>
+    </div>
+    <div class="header__section">
+        <div class="header__item headerButton"><a href="check_in.html">Регистрация</a></div>
+        <div class="header__item headerButton"><a href="#">Войти</a></div>
+    </div>
+</div>
+
+<div class="form-wrap">
+    <div class="profile"><img src="http://download.seaicons.com/icons/double-j-design/origami-colored-pencil/128/blue-user-icon.png">
+        <h1>Регистрация</h1>
+    </div>
+    <form method="post" action="form.php">
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="name">Фамилия</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="password">Пароль</label>
+            <input class="password" type="password" name="password">
+        </div>
+        <div>
+            <label for="password">Повторить пароль</label>
+            <input class="password" type="password" name="password">
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Телефон</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="radio">
+                <span>Пол</span>
+                <label>
+                    <input type="radio" name="sex" value="мужской">мужской
+                    <div class="radio-control male"></div>
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="женский">женский
+                    <div class="radio-control female"></div>
+                </label>
+            </div>
+            <div>
+                <p>Хобби</p>
+                <p><input type="checkbox" name="a" value="Рыбалка"> Рыбалка</p>
+                <p><input type="checkbox" name="a" value="Охота"> Охота</p>
+                <p><input type="checkbox" name="a" value="Танцы"> Танцы</p>
+                <p><input type="checkbox" name="a" value="Рисование"> Рисование</p>
+                <p><input type="checkbox" name="a" value="Музыка"> Музыка</p>
+            </div>
+            <label for="country">Город</label>
+            <select name="country">
+                <option>Город проживания</option>
+                <option value="Россия">Киев</option>
+                <option value="Украина">Прилуки</option>
+                <option value="Беларусь">Борисполь</option>
+            </select>
+            <div class="select-arrow"></div>
+        </div>
+        <div>
+            <p>Добавьте фото</p>
+            <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+        </div>
+        <div>
+            <label for="date">Дата рождения: </label>
+            <input class="password" type="date" id="date" name="date"/>
+            </p>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+</body>
+</html>

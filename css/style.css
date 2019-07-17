@@ -1,0 +1,244 @@
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #c857ddf0;
+    color: #fff;
+    font-family: Helvetica;
+
+}
+.header__section{
+    display: flex;
+    align-items: center;
+}
+.header__item{
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+.header__item:hover{
+    background: tomato;
+    border-radius: 4px;
+
+}
+.headerlogo{
+    font-weight: bold;
+}
+.headerButton{
+    cursor: pointer;
+}
+
+
+*{box-sizing:border-box}
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i&subset=cyrillic';
+
+body{
+    background: url(../jpg/image.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+
+.form-wrap {
+    width: 550px;
+    background: #e660d659;
+    border-radius: 20px;
+    position: static;
+    display: block;
+    margin: 10px  auto;
+}
+.form-wrap *{transition: .1s linear}
+.profile {
+    width: 240px;
+    float: left;
+    text-align: center;
+    padding: 30px;
+}
+form {
+    background: white;
+    float: left;
+    width: calc(100% - 240px);
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    color: #7b7b7b;
+}
+.form-wrap:after, form div:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+form div {
+    margin-bottom: 30px;
+    position:  static;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 50px;
+}
+
+label, span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+input[type="text"], input [type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px 15px;
+    border-width: 0;
+    background: #e6e6e6;
+    outline: none;
+    margin: 0;
+}
+input[type="text"]:focus, input [type="password"]:focus, input[type="email"]:focus {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+
+
+.password{
+    width: 100%;
+    padding: 10px 15px;
+    border-width: 0;
+    background: #e6e6e6;
+    outline: none;
+    margin: 0;
+}
+.radio label {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    line-height: 40px;
+}
+.radio input {
+    position: absolute;
+    opacity: 0;
+}
+.radio-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: #e6e6e6;
+    border-radius: 50%;
+    text-align: center;
+}
+.male:before {
+    content: "\f222";
+    font-family: FontAwesome;
+    font-weight: bold;
+}
+.female:before {
+    content: "\f221";
+    font-family: FontAwesome;
+    font-weight: bold;
+}
+.radio label:hover input ~ .radio-control,
+.radiol input:focus ~ .radio-control {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.radio input:checked ~ .radio-control {
+    color: red;
+}
+select {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background: #e6e6e6;
+    color: #7b7b7b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+.select-arrow {
+    position: absolute;
+    top: 38px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+button {
+    padding: 10px 0;
+    border-width: 0;
+    display: block;
+    width: 120px;
+    margin: 25px auto 0;
+    background: #8d60e6;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    body {display: block}
+    .form-wrap {margin: 20px auto; max-width: 550px; width:100%}
+    .profile, form {float: none; width: 100%}
+    h1 {margin-top: auto; padding-bottom: 50px;}
+    form {border-radius: 0 0 20px 20px}
+}
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 50%;
+    position: center;
+    margin-top: 10%;
+
+}
+/* границы ячеек первого ряда таблицы */
+th {
+    border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+    border: 1px solid grey;
+}
+
+iframe{
+    position: center;
+    border: solid;
+    display: block;
+    margin: 120px  auto;
+}
+
+.articles{
+    color: #fff;
+    font-family: Helvetica;
+}
+
+/* Кнопка Go to top*/
+
+.btn-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #2ecc71;
+    color: #fff
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.btn-top:hover{
+    background-color: #27ae60;
+}
